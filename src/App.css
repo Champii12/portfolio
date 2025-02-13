@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: #282c34;
+  background: linear-gradient(90deg, #3e4045 , #1a1c22 );
   color: #fff;
   margin: 0;
   display: flex;
@@ -14,8 +14,7 @@ body {
 /* Contenedor principal */
 .App {
   width: 100%;
-  max-width: 1000px; 
-  background-color: #282c34;
+  max-width: 675px; 
   padding: 20px;
   text-align: center;
 }
@@ -73,6 +72,8 @@ body {
   margin-top: 20px;
 }
 .App-button {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #5accf2;
   border: 2px solid #5accf2;
@@ -84,7 +85,6 @@ body {
 
 .App-button:hover {
   background: hsl(195, 85%, 65%);
-  color: #282c34;
 }
 .App-buttons a {
   text-decoration: none;
@@ -98,7 +98,6 @@ body {
 
 .App-buttons a:hover {
   background: hsl(195, 85%, 65%);
-  color: #282c34;
 }
 
 /* Secciones */
@@ -115,24 +114,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #282c34;
   margin: 40px auto;
   padding: 15px;
   border: 1px solid hsl(195, 85%, 65%);
   border-radius: 20px;
   text-align: center;
-  max-width: 900px;
+  max-width: 600px;
 }
 .App-project {
   display: flex;
   align-items: center;
-  background-color: #282c34;
   margin: 40px 0;
   padding: 15px;
   border: 1px solid hsl(195, 85%, 65%);
   border-radius: 20px;
   text-align: center;
-  max-width: 900px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -168,7 +165,6 @@ body {
   font-family: 'Georgia', serif;
   font-size: 1.5em;
   color: #5accf2;
-  
 }
 
 .App-section p {
@@ -177,7 +173,13 @@ body {
   color: #fff;
   margin-bottom: 20px;
 }
-
+.App-estudios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
 
 
 /* 📱 Estilos responsivos */
