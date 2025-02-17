@@ -18,7 +18,7 @@ function App() {
                 Aplicación web que muestra el clima actual en una ciudad específica, proporcionando información meteorológica precisa y actualizada.
                 Está hecha con React y utiliza APIs para obtener los datos meteorológicos.
               </p>
-              <a href="https://github.com/Champii12/Aplicaci-n-del-tiempo" target="_blank" rel="noopener noreferrer" className="App-button">
+              <a href="https://tiempox.champii.es/" target="_blank" rel="noopener noreferrer" className="App-button">
               <img src={logoGithub} className="App-logo-github" alt="logoGithub" />
               </a>
               </div>
