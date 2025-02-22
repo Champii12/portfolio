@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(90deg, #3e4045 , #1a1c22 );
+  background: linear-gradient(90deg, #7d8088 , #2f3035 );
   color: #fff;
   margin: 0;
   display: flex;
@@ -88,12 +88,12 @@ body {
 }
 .App-buttons a {
   text-decoration: none;
-  color: #5accf2;
+  color: #000;
   border: 2px solid #5accf2;
   padding: 8px 12px;
   border-radius: 10px;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.7s;
 }
 
 .App-buttons a:hover {
@@ -159,7 +159,12 @@ body {
 .App-project-content a{
   width: fit-content;
   font-weight: bold;
-  transition: background 0.3s;
+  color: black;
+  transition: background 0.7s;
+}
+.App-project-links{
+  display: flex;
+  gap: 10px;
 }
 .App-section h3 {
   font-family: 'Georgia', serif;
