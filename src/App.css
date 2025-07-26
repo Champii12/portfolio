@@ -1,42 +1,44 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(90deg, #7d8088 , #2f3035 );
+  background: linear-gradient(90deg, #7d8088, #2f3035);
   color: #fff;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center; /* Centra el texto */
-  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Contenedor principal */
 .App {
   width: 100%;
-  max-width: 675px; 
-  padding: 20px;
+  max-width: 675px;
+  padding: 15px;
   text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-height: calc(100vh - 120px); /* Reserva espacio para el footer */
 }
 
 /* Cabecera */
 .App-header {
   display: flex;
-  flex-direction: column; /* Elementos en columna por defecto */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  gap: 15px;
 }
 
 /* Estilos del título */
 .App-title {
   font-family: 'Georgia', serif;
-  font-size: 2em;
+  font-size: 1.8em;
   color: hsl(210, 85%, 55%);
   margin-bottom: 10px;
+  line-height: 1.2;
 }
-/* 🔹 Sección de títulos */
+
+/* Sección de títulos */
 .App-section-title {
   text-align: left;
   margin-top: 20px;
@@ -44,20 +46,22 @@ body {
 
 .App-section-title h2 {
   font-family: 'Georgia', serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #5accf2;
   margin-bottom: 5px;
+  line-height: 1.3;
 }
 
 .App-section-title p {
-  font-size: 1em;
+  font-size: 0.9em;
   color: #fff;
+  line-height: 1.4;
 }
 
 /* Imagen de perfil */
 .App-logo {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-top: 10px;
@@ -66,34 +70,44 @@ body {
 /* Botones */
 .App-buttons {
   display: flex;
-  gap: 10px;
-  justify-content: left;
+  gap: 8px;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
 .App-button {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #5accf2;
   border: 2px solid #5accf2;
-  padding: 8px 12px;
+  padding: 10px 15px;
   border-radius: 10px;
   font-weight: bold;
   transition: background 0.3s;
+  font-size: 0.9em;
+  min-height: 44px;
+  box-sizing: border-box;
 }
 
 .App-button:hover {
   background: hsl(195, 85%, 65%);
 }
+
 .App-buttons a {
   text-decoration: none;
   color: #000;
   border: 2px solid #5accf2;
-  padding: 8px 12px;
+  padding: 10px 15px;
   border-radius: 10px;
   font-weight: bold;
   transition: background 0.7s;
+  font-size: 0.9em;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .App-buttons a:hover {
@@ -103,120 +117,309 @@ body {
 /* Secciones */
 .App-content {
   width: 100%;
+  padding-bottom: 40px; /* Espacio antes del footer */
 }
+
 .App-content h2 {
   font-family: 'Georgia', serif;
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #5accf2;
   margin-bottom: 20px;
+  line-height: 1.3;
 }
+
 .App-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px auto;
-  padding: 15px;
+  margin: 20px auto;
+  padding: 20px 15px;
   border: 1px solid hsl(195, 85%, 65%);
   border-radius: 20px;
   text-align: center;
-  max-width: 600px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
 .App-project {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 40px 0;
-  padding: 15px;
+  margin: 20px auto;
+  padding: 20px 15px;
   border: 1px solid hsl(195, 85%, 65%);
   border-radius: 20px;
   text-align: center;
-  max-width: 600px;
-  margin: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  gap: 15px;
 }
 
 .App-project-image {
   border-radius: 10%;
   object-fit: cover;
-  margin-right: 20px;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+  width: 200px;
 }
 
 .App-project-content {
-  padding-left: 15px;
+  padding-left: 0;
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  width: 100%;
 }
+
 .App-project-title {
   font-family: 'Georgia', serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #5accf2;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
+
 .App-project-text {
   font-family: 'Georgia', serif;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
-.App-project-content a{
+
+.App-project-content a {
   width: fit-content;
   font-weight: bold;
   color: black;
   transition: background 0.7s;
+  padding: 10px 15px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
-.App-project-links{
+
+.App-project-links {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .App-section h3 {
   font-family: 'Georgia', serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #5accf2;
+  line-height: 1.3;
 }
 
 .App-section p {
   font-family: 'Georgia', serif;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
-.App-estudios{
+
+.App-estudios {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 20px;
+  gap: 10px;
 }
 
+/* Footer optimizado para móviles */
+.App-footer {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(47, 48, 53, 0.95), rgba(125, 128, 136, 0.95));
+  border-top: 2px solid #5accf2;
+  padding: 20px 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.85em;
+  margin-top: 30px;
+  box-sizing: border-box;
+  position: relative;
+  clear: both;
+  /* Asegura que el footer siempre sea visible */
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* 📱 Estilos responsivos */
-@media (min-width: 768px) {
-  .App-header {
-    flex-direction: row; /* En pantallas grandes, título e imagen en fila */
-    justify-content: space-between;
+.App-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #5accf2, transparent);
+  border-radius: 2px;
+}
+
+.App-footer p {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  line-height: 1.5;
+  font-size: 0.9em;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.App-footer a {
+  color: #5accf2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 2px 4px;
+  border-radius: 4px;
+  word-break: break-all; /* Para emails largos en móvil */
+}
+
+.App-footer a:hover {
+  color: #fff;
+  background-color: rgba(90, 204, 242, 0.2);
+  text-decoration: none;
+}
+
+/* 📱 Estilos específicos para móviles */
+@media (max-width: 480px) {
+  .App {
+    min-height: calc(100vh - 100px); /* Ajustado para móviles */
+    padding: 10px;
   }
-
+  
   .App-title {
+    font-size: 1.5em;
+  }
+  
+  .App-logo {
+    height: 120px;
+    width: 120px;
+  }
+  
+  .App-section-title h2 {
+    font-size: 1.3em;
+  }
+  
+  .App-content {
+    padding-bottom: 20px;
+  }
+  
+  .App-content h2 {
+    font-size: 1.4em;
+  }
+  
+  .App-project-title {
+    font-size: 1.2em;
+  }
+  
+  .App-project-text {
+    font-size: 0.9em;
+  }
+  
+  .App-section h3 {
+    font-size: 1.2em;
+  }
+  
+  .App-section p {
+    font-size: 0.9em;
+  }
+  
+  .App-footer {
+    padding: 15px 10px;
+    font-size: 0.8em;
+    min-height: 70px;
+  }
+  
+  .App-footer p {
+    font-size: 0.85em;
+    line-height: 1.4;
+  }
+  
+  .App-footer::before {
+    width: 40px;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 320px) {
+  .App-footer {
+    padding: 12px 8px;
+    font-size: 0.75em;
+  }
+  
+  .App-footer p {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    min-height: calc(100vh - 140px);
+  }
+  
+  .App-header {
+    flex-direction: row;
+    justify-content: space-between;
     text-align: left;
   }
-
+  
+  .App-title {
+    text-align: left;
+    font-size: 2em;
+  }
+  
   .App-logo {
     margin-right: 20px;
+    height: 200px;
+    width: 200px;
   }
-
+  
+  .App-buttons {
+    justify-content: left;
+  }
+  
   .App-project {
     flex-direction: row;
     text-align: left;
     justify-content: space-between;
+    max-width: 600px;
   }
-
+  
   .App-project-content {
     flex: 1;
     text-align: left;
-    padding-right: 20px; /* Espacio entre texto e imagen */
+    padding-right: 20px;
+    padding-left: 15px;
   }
-
+  
   .App-project-image {
-    max-width: 200px; /* Ajusta el tamaño de la imagen */
-    border-radius: 10%;
-    object-fit: cover;
+    max-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .App-project-links {
+    justify-content: flex-start;
+  }
+  
+  .App-section {
+    max-width: 600px;
+  }
+  
+  .App-footer {
+    padding: 25px 20px;
+    font-size: 0.9em;
+    min-height: 90px;
+  }
+  
+  .App-footer p {
+    font-size: 1em;
   }
 }
