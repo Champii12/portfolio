@@ -35,7 +35,6 @@ function App() {
               <h3>Grado Superior</h3>
               <p>Desarrollo de Aplicaciones Multiplataforma</p>
               <p>Las Naves Salesianos Alcalá de Henares Madrid</p>
-              <p>(Cursando en la actualidad)</p>
               <h3>Bachillerato en Ciencias y Tecnología</h3>
               <p>IES Cardenal Cisneros Alcalá de Henares Madrid</p>
             </div>
