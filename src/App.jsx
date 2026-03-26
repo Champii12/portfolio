@@ -33,7 +33,7 @@ function App() {
               <article className="App-section card">
                 <div className="App-estudios">
                   <h3>Desarrollador de automatizaciones</h3>
-                  <span className="card-date">Mar 2025 - Jun 2025</span>
+                  <span className="card-date">Mar 2025 - Jun 2025 · 4 meses</span>
                   <p>
                     Desarrollo de una macro en VBA para Excel que automatiza el
                     cruce de información entre varias hojas y archivos. Además,
@@ -125,6 +125,15 @@ function App() {
                 <div className="App-estudios">
                   <h3>Bachillerato en Ciencias y Tecnología</h3>
                   <p>IES Cardenal Cisneros</p>
+                  <p>Alcalá de Henares, Madrid</p>
+                </div>
+              </article>
+
+              <article className="App-section card">
+                <div className="App-estudios">
+                  <h3>Inglés</h3>
+                  <p>Nivel B1</p>
+                  <p>Academia De Inglés Queen's Language School</p>
                   <p>Alcalá de Henares, Madrid</p>
                 </div>
               </article>
